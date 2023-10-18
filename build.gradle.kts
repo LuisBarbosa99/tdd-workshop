@@ -27,6 +27,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	runtimeOnly("com.h2database:h2")
+	testImplementation("org.mockito.kotlin:mockito-kotlin:4.0.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
