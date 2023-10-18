@@ -12,7 +12,7 @@ data class Coupon(
     val id: String,
     
     @Column
-    val value: Long,
+    val valueCents: Long,
     
     @Column
     val quantity: Int,
