@@ -20,14 +20,6 @@ class CouponServiceTest {
     
     @Test
     fun shouldCreate() {
-        val form = CouponForm(
-            name = "XABLAU30",
-            value = 30L,
-            quantity = 4,
-            type = ""
-        )
-        
-        couponService.create(form)
         
         Mockito.verify(couponRepository, Mockito.times(1)).save(Mockito.any())
     }

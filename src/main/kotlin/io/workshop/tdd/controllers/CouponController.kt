@@ -21,8 +21,9 @@ class CouponController(
     
     //FIXME - Adicionar tratativa de erro.
     @PostMapping
-    fun create(@RequestBody form: CouponForm): ResponseEntity<Any> =
-        ok().build()
+    fun create(@RequestBody form: CouponForm): ResponseEntity<Any> {
+        return ok(form)
+    }
     
     @GetMapping("/{id}")
     fun findById(@PathVariable("id") id: String) {
@@ -30,9 +31,8 @@ class CouponController(
     }
     
     @GetMapping
-    fun list() {
-        //TODO
-    }
+    fun list() =
+        ok("Hello World!")
     
     @PutMapping("/{id}")
     fun use(@PathVariable("id") id: String) {
